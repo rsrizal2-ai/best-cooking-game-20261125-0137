@@ -47,6 +47,8 @@ function startShift() {
   Object.assign(state, fresh);
   state.screen = 'playing';
   state.plate = { plate: true, items: [] };
+  lastTickSecond = -1; // the low-time tick sound must fire again next shift
+  prompt = '';
   spawnOrder(state);
   sfx.ensure();
   sfx.startMusic();
