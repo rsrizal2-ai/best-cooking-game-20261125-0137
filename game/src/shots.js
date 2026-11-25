@@ -84,7 +84,7 @@ export function applyShot(state, shot) {
       ],
     };
     state.chef.x = 1140;
-    state.chef.y = 300;
+    state.chef.y = 308;
     state.chef.dir = 'up';
     state.coins = 110;
     state.earned = 110;
